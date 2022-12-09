@@ -50,7 +50,7 @@
     ```
     
     
-    ```html
+    ```
     
     <div class="wrapper">
 
@@ -63,7 +63,8 @@
     <div class="footer">Footer</div>
 
 </div>
-    ```
+    ```html
+   
     
     
     
