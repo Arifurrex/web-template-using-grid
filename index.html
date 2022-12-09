@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>web template by grid </title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>The Regular Way Of Adding A Grid</h1>
+    <div class="wrapper wrapper1">
+        <header>header</header>
+        <aside class="sidebar">sidebar</aside>
+        <main class="main">main</main>
+        <footer class="footer">footer</footer>
+    </div>
+    
+    <div class="wrapper wrapper2">
+        <header>header</header>
+        <aside class="sidebar">sidebar</aside>
+        <main class="main">main</main>
+        <footer class="footer">footer</footer>
+    </div>
+     <div class="wrapper-3-container">
+        <h1>Grid Template Areas</h1>
+        <p>The possible value for grid-template-areas is multiple strings grouped with quotation marks. Each cell in a string represents a column, and each string represents a row in the grid. We will redo the example above to understand how it works.</p>
+        <div class="wrapper wrapper3">
+            <header>header</header>
+            <aside class="sidebar">sidebar</aside>
+            <main class="main">main</main>
+            <footer class="footer">footer</footer>
+        </div>
+        <p>To understand the <code>grid-template-areas</code> value, see the below illustration about it.</p>
+        <p>
+            <code>grid-template-columns : 200px 1fr;</code> 
+            <code>grid-template-areas : "header header"
+                                        "sidebar sidebar"
+                                        "sidebar footer"
+             </code> 
+        </p>
+        <p>Since we have two columns, 200px and 1fr, the value of grid-template-areas should be aligned with them. When I wrote “header header”, it means that the header width will be 200px + 1fr, which is actually 100% of the parent width.</p>
+    
+     </div>
+     <div class="wrapper-4-container">
+        <h1>Empty Areas</h1>
+        <p>Sometimes, we want a cell in the grid to be empty. To do that, a “dot” should be added inside the grid-template-areas definition.</p>
+        <div class="wrapper wrapper4">
+            <header>header</header>
+            <aside>sidebar</aside>
+            <main>main</main>
+            <footer>footer</footer>
+        </div>
+        <p>The dot placed means that this cell is empty and the head should be placed on the second column. The result is as below:</p>
+     </div>
+</div>
+
+</body>
+</html>
