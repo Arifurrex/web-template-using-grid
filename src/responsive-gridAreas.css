@@ -1,0 +1,53 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: hsl(70deg, 80%, 40%);
+  text-transform: capitalize;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "featured featured featured" "item-1 item-1 item-1" "item-2 item-2 item-2";
+  gap: 1em;
+  min-height: 300px;
+}
+@media (min-width: 600px) {
+  main {
+    grid-template-areas: "featured item-1 item-2" "featured item-1 item-2";
+  }
+}
+@media (min-width: 900px) {
+  main {
+    grid-template-areas: "featured item-1 item-1" "featured item-2 item-2";
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(100deg, 29%, 90%);
+  border-radius: 5px;
+}
+.item:after {
+  content: "Article";
+}
+
+.featured {
+  grid-area: featured;
+}
+
+.item-2 {
+  grid-area: item-1;
+}
+
+.item-3 {
+  grid-area: item-2;
+}/*# sourceMappingURL=responsive-gridAreas.css.map */
